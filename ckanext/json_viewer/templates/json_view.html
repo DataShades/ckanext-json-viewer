@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block subtitle %}{% endblock %}
+
+{% block scripts %}
+    {% asset "json_viewer/json_viewer-js" %}
+{% endblock %}
+
+{% block styles %}
+    {% asset "json_viewer/json_viewer-css" %}
+{% endblock %}
+
+{% block page %}
+{% asset "json_viewer/json_viewer-css" %}
+    <andypf-json-viewer
+        id="andypf-json-viewer"
+        indent="4"
+        expanded="true"
+        theme="{{ resource_view.theme }}"
+        show-data-types="false"
+        show-toolbar="true"
+        expand-icon-type="square"
+        show-copy="true"
+        show-size="false"
+        data="{{ resource_url }}"></andypf-json-viewer>
+{% endblock %}

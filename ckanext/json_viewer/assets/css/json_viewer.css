@@ -1,0 +1,7 @@
+.resource-view.resource-view-json_viewer .ckanext-datapreview {
+    padding-top: 0;
+}
+
+.resource-view.resource-view-json_viewer .container {
+    margin: 0;
+}

@@ -1,0 +1,11 @@
+{% import 'macros/form.html' as form %}
+
+{{ form.select(
+    'theme',
+    id='field-theme',
+    label=_('Preview theme'),
+    options=h.json_viewer_get_theme_options(),
+    selected=data.theme or h.json_viewer_get_default_theme(),
+    attrs={'data-module': 'autocomplete'},
+    error=errors.theme)
+}}
