@@ -7,6 +7,11 @@ groups:
         default: default-light
         editable: true
 
+      - key: ckanext.json_viewer.default_max_height
+        description: Default maximum height for the JSON viewer (in pixels)
+        default: 700
+        editable: true
+
       - key: ckanext.json_viewer.default_view_name
         description: Default view name
         default: JSON Viewer

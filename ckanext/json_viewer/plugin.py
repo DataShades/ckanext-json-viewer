@@ -6,6 +6,7 @@ from ckan import types
 from ckan.common import CKANConfig
 
 import ckanext.resourceproxy.plugin as proxy
+
 from ckanext.json_viewer import config
 from ckanext.json_viewer.logic.schema import get_preview_schema
 
@@ -30,10 +31,11 @@ class JsonViewerPlugin(p.SingletonPlugin):
             "title": "JSON Viewer",
             "icon": "fa fa-code",
             "iframed": False,
-            "default_description": "Preview JSON data as a tree structure.",
             "schema": get_preview_schema(),
-            "always_available": True,
+            "preview_enabled": True,
             "default_title": config.get_default_view_name(),
+            "default_description": config.get_default_description(),
+
         }
 
     def can_view(self, data_dict: dict[str, Any]) -> bool:
