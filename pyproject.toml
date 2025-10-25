@@ -1,6 +1,6 @@
 [project]
 name = "ckanext-json-viewer"
-version = "1.0.3"
+version = "1.0.4"
 description = "JSON tree preview"
 readme = "README.md"
 authors = [

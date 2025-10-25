@@ -2,7 +2,7 @@
 
 A CKAN extension that provides an interactive JSON viewer for resource visualization, powered by [json-viewer](https://github.com/andypf/json-viewer).
 
-![view example](doc/image.png)
+![view example](https://raw.githubusercontent.com/DataShades/ckanext-json-viewer/master/doc/image.png)
 
 Features
 
