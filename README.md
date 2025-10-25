@@ -1,8 +1,15 @@
 # ckanext-json-viewer
 
-JSON view plugin
+A CKAN extension that provides an interactive JSON viewer for resource visualization, powered by [json-viewer](https://github.com/andypf/json-viewer).
 
 ![view example](doc/image.png)
+
+Features
+
+- Interactive JSON visualization with collapsible tree structure
+- Syntax highlighting for better readability
+- Easy navigation through complex JSON data
+- Seamless integration with CKAN's resource views
 
 
 ## Requirements
@@ -20,12 +27,17 @@ Compatibility with core CKAN versions:
 Install from source
 ```sh
 pip install -e .
-pip install -r requirements.txt
 ```
 
 Or use `pip`
 ```sh
 pip install ckanext-json-viewer
+```
+
+Enable the plugin and the view in your CKAN config file:
+```
+ckan.plugins = json_viewer
+ckan.views.default_views = json_viewer
 ```
 
 ## Config settings

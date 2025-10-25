@@ -21,13 +21,13 @@
 {% block page %}
     <andypf-json-viewer
         id="andypf-json-viewer"
-        indent="4"
-        expanded="true"
-        theme="{{ resource_view.theme }}"
-        show-data-types="false"
-        show-toolbar="true"
         expand-icon-type="square"
-        show-copy="true"
-        show-size="false"
+        theme="{{ resource_view.theme }}"
+        indent="{{ resource_view.indentation }}"
+        expanded="{{ 'true' if resource_view.expand else 'false' }}"
+        show-data-types="{{ 'true' if resource_view.show_data_types else 'false' }}"
+        show-toolbar="{{ 'true' if resource_view.show_toolbar else 'false' }}"
+        show-copy="{{ 'true' if resource_view.show_copy_button else 'false' }}"
+        show-size="{{ 'true' if resource_view.show_sizes else 'false' }}"
         data="{{ resource_url }}"></andypf-json-viewer>
 {% endblock %}

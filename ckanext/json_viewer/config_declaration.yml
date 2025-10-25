@@ -21,3 +21,33 @@ groups:
         description: Default description
         default: ""
         editable: true
+
+      - key: ckanext.json_viewer.default_expand
+        description: Whether to expand all nodes by default
+        default: false
+        editable: true
+
+      - key: ckanext.json_viewer.default_indentation
+        description: Default indentation level for JSON formatting
+        default: 4
+        editable: true
+
+      - key: ckanext.json_viewer.default_show_data_types
+        description: Whether to show data types in the JSON viewer
+        default: false
+        editable: true
+
+      - key: ckanext.json_viewer.default_show_toolbar
+        description: Whether to show the toolbar in the JSON viewer
+        default: true
+        editable: true
+
+      - key: ckanext.json_viewer.default_show_copy_button
+        description: Whether to show the copy button in the JSON viewer
+        default: true
+        editable: true
+
+      - key: ckanext.json_viewer.default_show_sizes
+        description: Whether to show sizes of the JSON data
+        default: false
+        editable: true

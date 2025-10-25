@@ -7,6 +7,10 @@ def json_viewer_get_default_theme() -> str:
     return config.get_default_theme()
 
 
+def json_viewer_get_default_max_height() -> int:
+    return config.get_default_max_height()
+
+
 def json_viewer_get_theme_options() -> list[dict[str, str]]:
     return [
         {"value": theme, "text": theme}
